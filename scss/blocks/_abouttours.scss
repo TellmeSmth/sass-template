@@ -1,0 +1,33 @@
+.abouttours {
+  background-color: $white;
+}
+
+.abouttours__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 23px 0 23px 0;
+}
+
+.abouttours__list-item-link {
+  font-family: $Lora;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $light-gray;
+  text-decoration: none;
+}
+
+@include breakpoint-down(550px) {
+  .abouttours__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abouttours__list-item-link {
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+}
